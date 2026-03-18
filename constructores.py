@@ -11,12 +11,16 @@ class Persona:
     
   def mostrar_persona(self):
     print(f"Nombre: {self.nombre} {self.apellido}")
-    
+    # manejo de memoria
+    print(f"Dir memoria self: {id(self)}")
+    print(f"Dir memoria hexadecimal self: {hex(id(self))}")
     
 # creacion objel=tos
 if __name__ == "__main__":
   persona1 = Persona("Layla","Acosta")
   persona1.mostrar_persona()
   
+  
   persona2 = Persona("Ian","Sanchez")
   persona2.mostrar_persona()
+  
